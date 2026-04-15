@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Urban Spice | Restaurant & Fine Dining</title> 
+  <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+ 
+  <header class="navbar">
+  <div class="logo">
+    <span class="logo-icon">🍛</span>
+    <span class="logo-text">Urban Spice</span>
+  </div>
+
+  <!-- Mobile button -->
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+
+  <nav class="nav-links" id="nav-links">
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    
+    <a href="#contact">Contact</a>
+
+    <button class="btn-reserve mobile-btn">Reserve Table</button>
+  </nav>
+
+  <button class="btn-reserve desktop-btn">Reserve Table</button>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Authentic Flavors, Modern Experience</h1>
+    <p>
+      Experience the finest fusion of traditional taste and modern dining at Urban Spice.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#menu" class="btn primary">Explore Menu</a>
+      <a href="#contact" class="btn secondary">Reserve a Table</a>
+    </div>
+  </div>
+</section>
+<section class="menu" id="menu">
+  <div class="section-title">
+    <h2>Our Signature Menu</h2>
+    <p>Carefully crafted dishes made with fresh ingredients</p>
+  </div>
+
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=80" alt="Momo">
+      <h3>Samosa</h3>
+      <p>crispy, deep-fried pastry filled with things like spiced potatoes, peas, peanuts</p>
+      <span>Rs. 250</span>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80" alt="Curry">
+      <h3>Butter Chicken</h3>
+      <p>Creamy tomato-based curry with rich spices.</p>
+      <span>Rs. 450</span>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=800&q=80" alt="Thali">
+      <h3>Thakali Set</h3>
+      <p>Traditional Nepali meal with balanced flavors.</p>
+      <span>Rs. 500</span>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=80" alt="Dessert">
+      <h3>Sweet Dessert Bowl</h3>
+      <p>Rich, creamy dessert to end your meal perfectly.</p>
+      <span>Rs. 200</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESERVATION SECTION (OUTSIDE MENU) -->
+<section class="reservation" id="contact">
+
+  <div class="reservation-container">
+
+    <div class="reservation-text">
+      <h2>Reserve a Table</h2>
+      <p>
+        Reserve your table at Urban Spice and enjoy an unforgettable dining experience.
+      </p>
+    </div>
+
+    <form class="reservation-form">
+
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+
+      <div class="row">
+        <input type="date" required>
+        <input type="time" required>
+      </div>
+
+      <input type="number" placeholder="Number of Guests" min="1" required>
+
+      <button type="submit">Confirm Reservation</button>
+
+    </form>
+
+  </div>
+
+</section>
+ 
+ <footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-brand">
+      <h3>🍛 Urban Spice</h3>
+      <p>
+        Authentic flavors, modern dining experience.  
+        Crafted with passion and fresh ingredients.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>📍 Kathmandu, Nepal</p>
+      <p>📞 +977 98XXXXXXXX</p>
+      <p>✉️ urbanspice@email.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Urban Spice. All rights reserved.</p>
+  </div>
+
+</footer>
+ <script src="script.js"></script>
+</body>
+</html>
