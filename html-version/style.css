@@ -440,9 +440,7 @@ body {
     flex-direction: column;
   }
 }
-
 /* Footer */
-
 .footer {
   background: #1f1410;
   color: #fff;
@@ -456,10 +454,19 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   max-width: 1400px;
-  margin: auto;
+  margin: 0 auto;
   gap: 50px;
   padding: 0 20px;
   text-align: left;
+  align-items: start;
+}
+
+/* Column structure */
+.footer-brand,
+.footer-links,
+.footer-contact {
+  display: flex;
+  flex-direction: column;
 }
 
 /* =========================
@@ -468,6 +475,7 @@ body {
 .footer-brand h3 {
   font-size: 24px;
   margin-bottom: 10px;
+
   margin-left: 28px;
 }
 
@@ -509,60 +517,62 @@ body {
 }
 
 /* =========================
-   CONTACT (RIGHT)
+   CONTACT
 ========================= */
-
 .footer-contact {
-  display: flex;
-  justify-content: flex-end; /* push block to right column */
-}
-
-.footer-contact-content {
-  width: 390px;          /* controls alignment width */
-  text-align: center;    /* centers heading + text nicely */
-}
-
-/* Heading */
-.footer-contact-content h4 {
-  margin: 0 0 10px 0;
-  color: #ff7a3d;
-  font-size: 16px;
-}
-
-/* Paragraphs */
-.footer-contact-content p {
-  margin: 0 0 8px 0;
-  color: #ccc;
-  font-size: 14px;
-  line-height: 1.5;
+  text-align: center;
 }
 /* =========================
-   BOTTOM SECTION
+   FOOTER BOTTOM
 ========================= */
 .footer-bottom {
+  width: 100%;
   text-align: center;
   margin-top: 40px;
   padding-top: 15px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  margin: 0;
   font-size: 13px;
+  color: #ccc;
   opacity: 0.7;
 }
 
+/* Brand alignment (desktop) */
+.footer-brand {
+  align-items: flex-start;
+}
+ 
 /* =========================
    MOBILE RESPONSIVE
 ========================= */
 @media (max-width: 768px) {
   .footer-container {
     grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
     text-align: center;
     gap: 25px;
   }
 
   .footer-contact {
-    text-align: left;
+    text-align: center;
   }
 
+  .footer-brand {
+    align-items: center;
+  }
+
+  .footer-brand h3,
   .footer-brand p {
-    margin: auto;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-links,
+  .footer-contact {
+    text-align: center;
   }
 }
